@@ -67,17 +67,18 @@ docsify serve docs
 
 - [首页](README.md)
 - [概述](README.md)
-- [操作指南]()
+- 操作指南
   * mac终端
-- [开发配置]()
-  * ssh远程登录腾讯云
-- [软件清单]()
+- 开发配置
+  * [ssh远程登录腾讯云](https://github.com/SaluteGF/Salute_MacOS/blob/main/docs/sections/%E5%BC%80%E5%8F%91%E9%85%8D%E7%BD%AE/ssh%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E8%85%BE%E8%AE%AF%E4%BA%91.md)
+  * [mac配置免密登陆github](https://github.com/SaluteGF/Salute_MacOS/blob/main/docs/sections/开发配置/mac配置免密登陆github.md)
+- 软件安装
   - [系统工具]()
   - [效率软件]()
   - [编程开发]()
   - [网络工具]()
   - [图形设计]()
-- [常见问题]()
+- 常见问题
   - [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者解决方法](https://github.com/SaluteGF/Salute_MacOS/blob/main/docs/sections/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/xxx.app%20%E5%B7%B2%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%EF%BC%8C%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%B0%86%E5%AE%83%E7%A7%BB%E5%88%B0%E5%BA%9F%E7%BA%B8%E7%AF%93%20:%20%E6%89%93%E4%B8%8D%E5%BC%80%20xxx%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%AE%83%E6%9D%A5%E8%87%AA%E8%BA%AB%E4%BB%BD%E4%B8%8D%E6%98%8E%E7%9A%84%E5%BC%80%E5%8F%91%E8%80%85.md)
   - [应用运行闪退或无反应](https://github.com/SaluteGF/Salute_MacOS/blob/main/docs/sections/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%BA%94%E7%94%A8%E8%BF%90%E8%A1%8C%E9%97%AA%E9%80%80%E6%88%96%E6%97%A0%E5%8F%8D%E5%BA%94.md)
 
