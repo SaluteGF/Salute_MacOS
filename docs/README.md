@@ -21,22 +21,8 @@
 
 ## 资源整理
 
-- 操作系统
-
-
-
-- mac
-
-
-
-- windows
-
-
-
-- linux
-
-
+- https://github.com/jaywcjlove/awesome-mac
 
 ## License
 
-Licensed under the [Apache-2.0](http://choosealicense.com/licenses/apache/) © Salute_Operation_System
+Licensed under the [Apache-2.0](http://choosealicense.com/licenses/apache/) © Salute_MacOS
