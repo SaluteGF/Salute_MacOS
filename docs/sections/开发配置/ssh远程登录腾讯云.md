@@ -38,7 +38,7 @@ sudo /etc/init.d/ssh start
 - 在左侧导航栏中，单击 **[SSH 密钥](https://console.cloud.tencent.com/cvm/sshkey)**。
 - 在 SSH 密钥管理页面，单击创建密钥
 
-![2](../../../img/10.jpg)
+![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/16.jpg)
 
 - 若创建方式选择 “创建新密钥对”，请输入密钥名称。
 - 若创建方式选择 “导入已有公钥”，请输入密钥名称和原有的公钥信息。
@@ -51,7 +51,7 @@ cat ~/.ssh/id_rsa.pub
 
 ## 3、下载密钥到本地
 
-![11](../../../img/11.jpg)
+![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/17.jpg)
 
 这个时候我们mac上就会有一个从腾讯云下载下来的ssh密匙,下载保存的路径自己选择
 
@@ -67,13 +67,11 @@ chmod 600 /Users/zhougaofeng/Downloads/mac_zgf
 
 - 登录 [云服务器控制台](https://console.cloud.tencent.com/cvm/)。
 - 在左侧导航栏中，单击 **[SSH 密钥](https://console.cloud.tencent.com/cvm/sshkey)**。
-- 在 SSH 密钥管理页面，勾选需要绑定云服务器的 SSH 密钥，并单击**绑定实例**。如下图所示：
-
-![12](../../../img/12.jpg)
+- 在 SSH 密钥管理页面，勾选需要绑定云服务器的 SSH 密钥，并单击**绑定实例**。
 
 - 在弹出的绑定实例窗口中，选择地域，勾选需绑定的云服务器，单击**确定**。
 
-![13](../../../img/13.jpg)
+![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/18.jpg)
 
 ## 5、mac终端访问
 
@@ -86,7 +84,7 @@ ssh -i [私匙的本地路径] [主机名]@[主机地址]
 # 例如：ssh -i /Users/zhougaofeng/Downloads/mac_zgf ubuntu@118.xx.xx.xx 
 ```
 
-![14](../../../img/14.jpg)
+![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/19.jpg)
 
 ### （2）终端自带ssh远程连接（推荐）
 
@@ -94,15 +92,15 @@ ssh -i [私匙的本地路径] [主机名]@[主机地址]
 
 1. 命令打开ssh目录（如果你电脑没有.ssh文件夹，则创建一个）
 
-![15](../../../img/15.jpg)
+![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/20.jpg)
 
 2. 下面再把从腾讯云下载的私钥粘贴到该目录下，并在终端新建远程连接
 
-![16](../../../img/16.jpg)
+![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/21.jpg)
 
 3. 最后连接成功，.ssh目录下多了一个known_hosts文件
 
-![17](../../../img/17.jpg)
+![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/22.jpg)
 
 > 总结：推荐适用方式二，虽然第一次使用需要配置一下，但是这样第二次连接服务器就不需要重新输入命令，直接打开终端的新建远程连接使用上一次记录即可
 

@@ -1,17 +1,16 @@
 * [首页](README.md)
 * [概述](README.md)
-* [操作指南]()
-  * mac终端
-* [开发配置]()
-  * ssh远程登录腾讯云
-* [软件清单]()
+* 操作指南
+* 开发配置
+  * [mac配置免密登陆github](sections/开发配置/mac配置免密登陆github.md)
+  * [ssh远程登录腾讯云](sections/开发配置/ssh远程登录腾讯云.md)
+* 软件安装
   - [系统工具]()
   - [效率软件]()
   - [编程开发]()
   - [网络工具]()
   - [图形设计]()
-* [常见问题]()
-  - [无法打开“xxx.app”解决办法](sections/常见问题/无法打开“xxx.app”解决办法.md)
-  - [软件安装]()
-      - [binary search tree](/general/algorithm/data-structures/tree/binary-search-tree/README.md)
+* 常见问题
+  - [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者解决方法](sections/常见问题/xxx.app 已损坏，无法打开，你应该将它移到废纸篓 : 打不开 xxx，因为它来自身份不明的开发者.md)
+  - [应用运行闪退或无反应](sections/常见问题/应用运行闪退或无反应.md)
 
