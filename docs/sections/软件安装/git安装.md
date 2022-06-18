@@ -1,9 +1,17 @@
 ## 安装git
 
-打开终端，输入git，会直接跳出对话框，点击同意
+1. 打开终端，输入git，会直接跳出对话框，点击同意
 
-![git](/Users/zhougaofeng/Desktop/Salute_/Salute_MacOS/img/2.jpg)
+![2](/Users/zhougaofeng/Desktop/Salute_系列/Salute_MacOS/img/2.jpg)
 
-点击同意进行安装即可
+2. 点击同意进行安装即可
 
-![协议](/Users/zhougaofeng/Desktop/Salute_/Salute_MacOS/img/3.jpg)
+![3](/Users/zhougaofeng/Desktop/Salute_系列/Salute_MacOS/img/3.jpg)
+
+
+
+## 什么是 命令行开发者工具?
+
+命令行开发者工具（`Command Line Tools `）是苹果的一个小型独立包，适用于 macOS，为终端扩展了额外的功能。包括但不限于：svn、git、make、GCC、clang、perl、size、strip、strings、libtool、cpp、what、codesign以及其他很多能够在Linux中找到的命令。
+
+一般来说，大家只需打开终端，然后在终端中执行 `xcode-select --install` 就会打开安装程序，然后按提示安装即可。
