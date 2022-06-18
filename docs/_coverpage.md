@@ -11,7 +11,7 @@
   <a href="https://blog.csdn.net/weixin_44557056?type=blog"><img src="https://img.shields.io/badge/BLOG-CSDN-success"></a>
 <br>
 
-[GitHub](https://github.com/Nicolas-gaofeng/Salute_MacOS)
+[GitHub](https://github.com/SaluteGF/Salute_MacOS)
 [开始阅读](/README.md)
 
 

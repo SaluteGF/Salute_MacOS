@@ -78,7 +78,8 @@ docsify serve docs
   - [网络工具]()
   - [图形设计]()
 - [常见问题]()
-  - [无法打开“xxx.app”解决办法](sections/常见问题/无法打开“xxx.app”解决办法.md)
+  - [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者解决方法](https://github.com/SaluteGF/Salute_MacOS/blob/main/docs/sections/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%B7%B2%E6%8D%9F%E5%9D%8F%E8%A7%A3%E5%86%B3.md)
+  - [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者解决方法](https://github.com/SaluteGF/Salute_MacOS/blob/main/docs/sections/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%B7%B2%E6%8D%9F%E5%9D%8F%E8%A7%A3%E5%86%B3.md)
 
 
 
