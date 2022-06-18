@@ -2,13 +2,11 @@
 
 1. 打开终端，输入git，会直接跳出对话框，点击同意
 
-![2](/Users/zhougaofeng/Desktop/Salute_系列/Salute_MacOS/img/2.jpg)
+![2](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/2.jpg)
 
 2. 点击同意进行安装即可
 
-![3](/Users/zhougaofeng/Desktop/Salute_系列/Salute_MacOS/img/3.jpg)
-
-
+![3](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/3.jpg)
 
 ## 什么是 命令行开发者工具?
 
