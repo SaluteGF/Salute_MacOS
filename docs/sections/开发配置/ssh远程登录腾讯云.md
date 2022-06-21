@@ -34,16 +34,16 @@ sudo /etc/init.d/ssh start
 
 ## 2、在腾讯后台创建SSH密钥
 
-- 登录 [云服务器控制台](https://console.cloud.tencent.com/cvm/)。
-- 在左侧导航栏中，单击 **[SSH 密钥](https://console.cloud.tencent.com/cvm/sshkey)**。
-- 在 SSH 密钥管理页面，单击创建密钥
+- 登录 [云服务器控制台](https://console.cloud.tencent.com/cvm/)，这里我以[轻量应用服务器](https://console.cloud.tencent.com/lighthouse/sshkey/index)为例。
+- 在左侧导航栏中，单击轻量应用服务器 [**密钥**](https://console.cloud.tencent.com/lighthouse/sshkey/index)，云服务器为 **[SSH密钥](https://console.cloud.tencent.com/cvm/sshkey)**。
+- 在密钥管理页面，单击创建密钥
 
 ![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/16.jpg)
 
 - 若创建方式选择 “创建新密钥对”，请输入密钥名称。
-- 若创建方式选择 “导入已有公钥”，请输入密钥名称和原有的公钥信息。
+- 若创建方式选择 “使用已有公钥”，请输入密钥名称和原有的公钥信息。
 
-> ⚠️ 因为之前配置过git，所以可以执行以下命令将输出的密钥复制到腾讯云，关机实例并绑定，直接配置终端（新建远程连接）即可。
+> ⚠️ 因为之前配置过git，所以可以执行以下命令将输出的公钥内容复制到腾讯云，关机实例并绑定，直接配置终端（新建远程连接）即可。
 
 ```bash
 cat ~/.ssh/id_rsa.pub
@@ -53,7 +53,7 @@ cat ~/.ssh/id_rsa.pub
 
 ![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/17.jpg)
 
-这个时候我们mac上就会有一个从腾讯云下载下来的ssh密匙,下载保存的路径自己选择
+这个时候我们mac上就会有一个从腾讯云下载下来的ssh密匙,下载保存的路径自己选择（若加入的是自己之前配置的公钥，跳过此步）
 
 打开终端，给文件设置权限，给文件设置权限为 600
 
@@ -66,7 +66,8 @@ chmod 600 /Users/zhougaofeng/Downloads/mac_zgf
 ## 4、密钥绑定实例
 
 - 登录 [云服务器控制台](https://console.cloud.tencent.com/cvm/)。
-- 在左侧导航栏中，单击 **[SSH 密钥](https://console.cloud.tencent.com/cvm/sshkey)**。
+- 将所需要绑定密钥的服务器关机。
+- 在左侧导航栏中，单击 **[SSH密钥](https://console.cloud.tencent.com/cvm/sshkey)**。
 - 在 SSH 密钥管理页面，勾选需要绑定云服务器的 SSH 密钥，并单击**绑定实例**。
 
 - 在弹出的绑定实例窗口中，选择地域，勾选需绑定的云服务器，单击**确定**。
@@ -88,11 +89,15 @@ ssh -i [私匙的本地路径] [主机名]@[主机地址]
 
 ### （2）终端自带ssh远程连接（推荐）
 
-目前网上资料mac建立ssh连接基本都是mac上生成ssh公钥和私钥，然后再把生成的公钥push到服务上。而我们使用的是腾讯云ssh，我们在腾讯云ssh面板中已经生成了ssh公钥和私钥，并且公钥可以在腾讯云ssh面板加载到服务器中，无需我们手动push。我们需要做的就是把私钥放到mac的.ssh目录下就行了
+如果使用的是腾讯云ssh，并且在腾讯云ssh面板中已经生成了ssh公钥和私钥，那么公钥可以在腾讯云ssh面板加载到服务器中，无需我们手动push。我们需要做的就是把私钥放到mac的.ssh目录下就行了
 
 1. 命令打开ssh目录（如果你电脑没有.ssh文件夹，则创建一个）
 
-![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/20.jpg)
+```bash
+ls -la ~/.ssh
+```
+
+![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/9.jpg)
 
 2. 下面再把从腾讯云下载的私钥粘贴到该目录下，并在终端新建远程连接
 
@@ -102,7 +107,11 @@ ssh -i [私匙的本地路径] [主机名]@[主机地址]
 
 ![img](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/22.jpg)
 
-> 总结：推荐适用方式二，虽然第一次使用需要配置一下，但是这样第二次连接服务器就不需要重新输入命令，直接打开终端的新建远程连接使用上一次记录即可
+如果使用mac建立ssh连接，在mac上生成ssh公钥和私钥，然后把生成的公钥push到服务上。则可以直接填入服务器地址，指定用户名ubuntu后，在终端新建远程连接
+
+![image-20220621094503940](https://raw.githubusercontent.com/SaluteGF/Salute_MacOS/main/img/20.jpg)
+
+> 总结：推荐适用方式二，虽然第一次使用需要配置一下，但是这样第二次连接服务器就不需要重新输入命令，直接右键终端的新建远程连接使用上一次记录即可
 
 ⚠️：使用ssh免密登录后，原来的使用账号密码登录方式便会失效
 
